@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Posicionamento de DIV</title>
+    <style type="text/css">
+        h1{
+            color: white;
+            font-family: 'Verdana';
+        }
+        h3{
+            font-family: 'Verdana';
+        }
+        .divAbsolute{
+            background-image: linear-gradient(to bottom, #fe0000, #ffffff);
+            position:absolute;
+            top: 22px;
+            left:10px;
+            width: 25%;
+        }
+        .divAlignCenter{
+            text-align: center;
+            margin: 0 auto;
+            width: 45%;
+            height: 1175px;
+            background-color: #fe0000;
+            background-image: linear-gradient(
+                to right, 
+                #fe0000 0%, 
+                #fe0000 33.33%,
+                #000000 33.33%, 
+                #000000 66.66%, 
+                #ffffff 66.66%
+            );
+            background-size: 18px 100%;
+        }
+        .divX{
+            background-color:#000000;
+        }
+        .divY{
+            background-color: #ffffff;
+        }
+        .divFixed {
+            font-family: 'Verdana';
+            text-align: left;
+            position: fixed;
+            top: 50%;
+            right: 0%;
+            width: 40%;
+            background-image: linear-gradient(
+                to right, #00A032, #FFCD00);
+        }
+    </style>
+</head>
+<body>
+    <div class="divs divAbsolute">
+        <h4>Redes Sociais:</h4>
+        <ul>
+            <a href="https://twitter.com/SaoPauloFC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                <img src="twitter.png" height="15px">
+                Twitter
+            </a>
+            <a href="https://www.facebook.com/saopaulofc/?locale=pt_BR">
+                <img src="facebook.png" height="15px">
+                Facebook
+            </a>
+            <a href="https://www.instagram.com/saopaulofc/">
+                <img src="instagram.png" height="15px">
+                Instagram
+            </a>
+        </ul>
+    </div>
+    <div class="divAlignCenter">
+        <div class="divX"><h1>São Paulo</h1></div>
+        <iframe height="350" width="90%" src="https://www.youtube.com/embed/lVbjAoFh3Kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe height="350" width="90%" src="https://www.youtube.com/embed/sRFc1ttUuTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe height="350" width="90%" src="https://www.youtube.com/embed/6i4sFevUHSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="divY"><h3>Últimas Partidas:</h3></div>
+    </div> 
+    <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwtMw1MTJg9OIqPrw4X6EgsTQnHwBNVAda&client=opera-gx&q=são+paulo&sourceid=opera&ie=UTF-8&oe=UTF-8#sie=t;/m/019m42;2;/m/0fnk7q;st;fp;1;;;">
+        <div class="divFixed">
+            Tabela Campeonato Brasileiro
+        </div>
+    </a>
+</body>
+</html>
